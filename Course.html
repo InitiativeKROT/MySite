@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Установка кодировки и заголовка страницы -->
+  <meta charset='UTF-8'>
+  <!-- Подключение стилей -->
+  <link rel="stylesheet" href="../CSS/Free.css">
+  <!-- Иконка сайта -->
+  <link rel="shortcut icon" href="../IMG/logo.png">
+  <!-- Подключение шрифтов с Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=Open+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <title>Free сourse</title>
+</head>
+
+<body>
+  <!-- Шапка сайта (header) -->
+    <header>
+      <!-- Основной контейнер -->
+      <div class="container">
+        <!-- Второй контейнер внутри шапки с классом header_2 -->
+        <div class="header_2">
+          <!-- Логотип и текст в одном блоке -->
+          <div class="logoxtext">
+            <!-- Ссылка на главную страницу с логотипом -->
+            <a href="../HTML/My site.html" class="logo-1">
+              <img class="img_logo-1" src="../IMG/logo.png">
+            </a>
+            <!-- Текст и слоган -->
+            <div class="english-guide3">English Guide<br><span class="uchi">Учить английский - просто!</span></div>
+          </div>
+          <!-- Блок с главной ссылкой "На главную" -->
+        <div class="Glavnaya">
+          <div class="mane"><a class="Link_mane" href="../HTML/My site.html">На главную</a></div>
+        </div>
+      </div>
+      </div>
+    </header>
+
+
+
+
+
+
+
+    <!-- Основной контент страницы (main) -->
+    <main>
+      <!-- Третий контейнер внутри main с классом container_2 -->
+    <div class="container_2">
+      <!-- Блок с текстом и фотографией -->
+      <div class="txt_photo">
+        <!-- Первый текстовый блок -->
+          <div class="txt_1">
+        Забудьте о языковых барьерах! <br>Изучайте английский язык с нами и
+        откройте новые возможности! Мы предлагаем широкий выбор курсов для
+        изучения английского языка: от бесплатных до платных, от начального
+        уровня до продвинутого. Мы также предлагаем индивидуальные занятия и
+        курсы для корпоративных клиентов, которые хотят улучшить свои навыки
+        общения на английском языке в рабочей среде. Не откладывайте свое
+        развитие на завтра! Запишитесь на курсы уже сегодня и сделайте первый
+        шаг к свободному владению английским языком!
+          </div><br>
+          <!-- Кнопка для открытия модального окна -->
+          <button id="openModal">Купить курсы</button><br>
+          <!-- Фотография -->
+          <img class="Eng_photo" src="../IMG/ENG.jpg">
+      </div>
+      <!-- Второй текстовый блок -->
+      <div class="txt_2">
+        Бесплатные курсы включают в себя:<br><br>1. Грамматику: Начните с азов
+        английского языка, изучите основы грамматики и правила построения
+        предложений.<br><br><a class="skachat" href="../Documents/Грамматика.pdf" download="Grammatika">Скачать</a><br><br>2. Словарь:
+        Расширьте свой словарный запас с помощью наших бесплатных
+        материалов.<br><br><a class="skachat" href="../Documents/Словарь.pdf" download="Slovar">Скачать</a><br><br>3. Чтение: Развивайте
+        навыки чтения с помощью данного материала. Платные
+        курсы предлагают более углубленное изучение английского языка с
+        опытными преподавателями, доступ к интерактивным материалам и
+        персонализированный подход к каждому ученику.<br><br><a class="skachat" href="../Documents/Чтение.pdf" download="Chtenie">Скачать</a>
+      </div>
+    </div>
+  </main>
+
+
+
+
+  <!-- Модальные окна -->
+  <dialog id = "modal_sign_up">  <!-- Модальное окно регистрации  -->
+    <form action = "../PHP/check.php" class ="form" method="post">
+      <div class="container">
+        <!-- Закрытие модального окна -->
+      <a href= "#" id= "closeModal">✕</a>
+      <div class="app-title">
+          <h1>Регистрация</h1>
+      </div>
+      <!-- Поля для ввода данных и кнопка регистрации -->
+      <div class="login-form">
+          <div class="control-group">
+              <input type="text" class="login-field" placeholder="Имя пользователя" name="username" id="login-username">
+              <label class="login-field-icon fui-user" for="username"></label>
+          </div>
+          <div class="control-group">
+              <input type="text" class="login-field" placeholder="Эл.почта" name="mail" id="login-email">
+              <label class="login-field-icon fui-user" for="mail"></label>
+          </div>
+          <div class="control-group">
+              <input type="password" class="login-field" placeholder="Пароль" name="pass" id="login-pass">
+              <label class="login-field-icon fui-lock" for="pass"></label>
+          </div>
+      
+          <button class="btn btn-primary btn-large btn-block" type="submit"> Sign-up </button> 
+
+      <div class="text">
+      <p>Уже есть аккаунт? <a href = "#" class = "log_in">Войти</a></p> 
+    </div>
+  </div>
+      </div>
+    </form>
+</dialog>
+
+<dialog id = "modal_log_in"> <!-- Модальное окно входа -->
+    <form action = "../PHP/auth.php" class = "form" method = "post">
+      <div class="container">
+        <!-- Закрытие модального окна -->
+          <a href = "#" id= "closeModal1">✕</a>
+          <div class="app-title">
+              <h1>Вход</h1>
+          </div>
+          <!-- Поля для ввода данных и кнопка входа -->
+          <div class="login-form">
+             <div class="control-group">
+              <input type="text" class="login-field" placeholder="Эл.почта" name="mail" id="login-email">
+              <label class="login-field-icon fui-user" for="mail"></label>
+            </div>
+              <div class="control-group">
+                  <input type="password" class="login-field" placeholder="Пароль" name="pass" id="login-pass">
+                  <label class="login-field-icon fui-lock" for="pass"></label>
+              </div>
+          
+              <button class="btn btn-primary btn-large btn-block" type="submit"> Login </button>
+          <div class="text">
+      <div class="text">
+      <p>Нет аккаунта? <a href = "#" class = "sign_up"> Зарегистрироваться</a></p> 
+      </div>
+      </div>
+    </form>
+</dialog>
+
+  <!-- Подвал страницы (footer) -->
+  <footer>
+    <!-- Контейнер внутри footer с классом container_3 -->
+    <div class="container_3">
+      <!-- Блок с картой и контактной информацией -->
+      <div class="karta_info">
+        <!-- Карта с использованием Yandex Maps API -->
+        <div class="Karta">
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abcabca882e8239bb900fef13d55721f2b9ea4c30060786abf0f734af9c77f2b2&amp;width=500&amp;height=320&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+      <!-- Информационный блок с контактами -->
+      <div class="info">
+        <div class="Link">
+          <div class="Information">Контактная информация:</div>
+          <div class="Links">
+            <a href="https://wa.me/79045397877" target="_blank"><img class="wa" src="../IMG/wa.png"></a>
+            <a href="https://vk.com/ogromniybebrik" target="_blank"><img class="vk" src="../IMG/vk.png"></a>
+            <a href="https://t.me/OgromniyLopyshochek" target="_blank"><img class="tg" src="../IMG/tg.png"></a>
+          </div>
+        </div>
+        <div class="Number">Горячая линия:<br />+7 (904) 539 78 77</div>
+      </div>
+    </div>
+    </div>
+  </footer>
+<!-- Подключение скрипта для модальных окон -->
+<script src="../JS/modal.js"></script>
+</body>
+
+</html>

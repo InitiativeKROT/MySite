@@ -1,0 +1,611 @@
+/* Обнуление отступов и полей, задание шрифта */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif; /*Тема шрифта*/
+}
+
+/* Контейнер с максимальной шириной 1140px, центрирование по горизонтали */
+.container {
+  width: 100%; /*Ширина*/
+  max-width: 1140px; /*Максимальная ширина*/
+  margin: 0 auto;
+}
+/* Контейнер с максимальной шириной 1140px, центрирование по горизонтали */
+.container_2 {
+  width: 100%; /*Ширина*/
+}
+/* Заголовок с минимальной высотой 253px, автоматической высотой и шириной 100% */
+header {
+  min-height: 253px; /*Минимальная высота*/
+  height: auto; /*Высота*/
+  width: 100%; /*Ширина*/
+}
+/* Дополнительные стили*/
+.header_2 {
+  min-height: 253px; /*Минимальная высота*/
+  height: auto; /*Высота*/
+  display: flex;
+  align-items: center; /*Выравнивание элементов по центру*/
+  justify-content: space-between;
+  flex-direction: row; /*Выравнивание элементов в строчку*/
+  flex-wrap: wrap; 
+}
+/* Стили для логотипа и текста рядом с ним */
+.logoxtext {
+  display: flex;
+  align-items: center;    
+  flex-direction: row;   /*Выравнивание элементов в строчку*/
+}
+
+.logo-1 {
+  display: block;
+  align-self: center;
+}
+
+.img_logo-1 {
+  border-radius: 50%; /*Размер сглаживания углов*/
+  width: 100px; /*Ширина*/
+  height: 100px; /*Высота*/
+}
+/* Стили для кнопок*/
+.button-2 {
+  background: #3b88c3; /*Цвет фона*/
+  border-radius: 15px; /*Размер сглаживания углов*/
+  width: 350px; /*Ширина*/
+  height: 50px; /*Высота*/
+  transition: all 0.3s ease-in-out; /*Плавный переход*/
+  margin: 1px; /*Отступ*/
+}
+
+.button-2:hover { /*Стиль после наведения курсора на объект*/
+  background-color: #29628d; /*Цвет фона*/
+}
+
+.txt_free {
+  color: #ffffff; /*Цвет текста*/
+  text-align: center; /*Выравнивание текста по центру*/
+  font-weight: 400;
+  font-size: 32px; /*Размер шрифта*/
+}
+
+.button-3 {
+  background: #3b88c3;
+  border-radius: 15px;
+  width: 350px;
+  height: 50px;
+  transition: all 0.3s ease-in-out;
+  margin: 1px;
+}
+
+.button-3:hover {
+  background-color: #29628d;
+}
+
+.registr {
+  color: #ffffff;
+  text-align: center;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.english-guide3 {
+  color: #000000;
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.uchi {
+  font-weight: 500;
+  font-size: 16px;
+  width: 220px;
+  height: 15px;
+}
+/* Стили для ссылок с классами Free и Reg */
+.Free {
+  text-decoration: none;
+  color: inherit;
+}
+
+.Reg {
+  text-decoration: none;
+  color: inherit;
+}
+/* Стили для блока с кнопками */
+.buttons {
+  display: flex;
+  flex-flow: column;
+}
+/* Стили для основного контента */
+main {
+  width: 100%;
+}
+/* Стили для первого сектора */
+.sector-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 326px;
+  height: auto;
+  overflow: hidden;
+  background-image: url(../IMG/Background1.png);
+  background-size: 100% 100%;
+}
+
+.english-guide2 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-right: 350px;
+}
+
+.english-guide-2-span {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.english-guide-2-span2 {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 24px;
+}
+/* Стили для второго сектора */
+.sector-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 450px;
+  height: auto;
+  overflow: hidden;
+}
+/* Стили для блока с Этапами */
+.Etapi {
+  color: #3b88c3;
+  text-align: center;
+  font: 800 40px "Inter-ExtraBold", sans-serif;
+}
+
+.Etapi_1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* Стили для элементов Этапа */
+.Etap {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 15px;
+  margin: 20px;
+}
+
+.Phone {
+  border-radius: 50%;
+  width: 87px;
+  height: 87px;
+  margin-left: 23px;
+}
+
+.Phone_txt {
+  color: #000000;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.Calendar {
+  border-radius: 50%;
+  width: 87px;
+  height: 87px;
+  margin-left: 30px;
+}
+
+.Calendar_txt {
+  color: #000000;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.Book {
+  border-radius: 50%;
+  width: 87px;
+  height: 87px;
+  margin-left: 30px;
+}
+
+.Book_txt {
+  color: #000000;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.Etapi_2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.Human {
+  border-radius: 50%;
+  width: 87px;
+  height: 87px;
+  margin-left: 23px;
+}
+
+.Human_txt {
+  color: #000000;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.Dialog {
+  border-radius: 50%;
+  width: 87px;
+  height: 87px;
+  margin-left: 23px;
+}
+
+.Dialog_txt {
+  color: #000000;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+}
+/* Стили для третьего сектора */
+.sector-3 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 326px;
+  height: auto;
+  overflow: hidden;
+  background: url(../IMG/Background2.png);
+  justify-content: center;
+  background-size: 100% 100%;
+}
+
+.Why {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-right: 550px;
+  margin-bottom: 50px;
+}
+
+.Points {
+  color: #ffffff;
+  text-align: left;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.english-guide {
+  color: #ffffff;
+  text-align: left;
+  font-weight: 400;
+  font-size: 28px;
+}
+/* Стили для четвертого сектора */
+.sector-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 1000px;
+  height: auto;
+  overflow: hidden;
+}
+/* Стили для блока с преподавателями */
+.Prepodavateli {
+  color: #3b88c3;
+  text-align: left;
+  font: 800 48px "Inter-ExtraBold", sans-serif;
+}
+/* Стили для блока с преподавателями и их описаниями */
+.Prepodi {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.P-1 {
+  width: 324px;
+  height: 450px;
+  overflow: hidden;
+  margin: 10px;
+  border-radius: 4%;
+}
+
+.P-2 {
+  width: 324px;
+  height: 450px;
+  overflow: hidden;
+  margin: 10px;
+  border-radius: 4%;
+}
+
+.P-3 {
+  width: 324px;
+  height: 450px;
+  overflow: hidden;
+  margin: 10px;
+  border-radius: 4%;
+}
+
+.opisanie {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* Стили для описания преподавателей */
+.Op_1 {
+  color: #000000;
+  text-align: left;
+  font-weight: 500;
+  font-size: 16px;
+  width: 324px;
+  height: 242px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.Op_2 {
+  color: #000000;
+  text-align: left;
+  font-weight: 500;
+  font-size: 16px;
+  width: 324px;
+  height: 362px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.Op_3 {
+  color: #000000;
+  text-align: left;
+  font-weight: 500;
+  font-size: 16px;
+  width: 324px;
+  height: 242px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/* Стили для подвала */
+footer {
+  width: 100%;
+}
+
+
+
+@media (max-width:1147px) {
+  .header_2 {
+    justify-content: space-around;
+  }
+  .Prepodi {
+    flex-direction: column;
+  }
+}
+@media (max-width:1000px) {
+  .Why {
+    margin-right: 350px;
+    margin-bottom: 0px;
+  }
+}
+
+
+.container_3 {
+  background: #2b2727;
+  width: 100%;
+  min-height: 253px;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: center;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+/* Стили для ссылок и иконок */
+.Link {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-evenly;
+  align-content: stretch;
+  flex-wrap: wrap;
+}
+
+.Links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.wa {
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+}
+
+.vk {
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+}
+
+.tg {
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+}
+
+.Information {
+  color: #ffffff;
+  text-align: left;
+  font-weight: 400;
+  font-size: 30px;
+  width: 380px;
+  height: 40px;
+}
+
+.Number {
+  color: #ffffff;
+  text-align: left;
+  font-weight: 400;
+  font-size: 30px;
+}
+/* Стили для карты */
+.karta_info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.Karta {
+  margin: 20px;
+  margin-right: 220px;
+  border:3px solid  #818181;
+}
+
+@media (max-width:1170px) {
+  .karta_info {
+    flex-direction: column;
+  }
+  .Karta {
+    margin-right: 0px;
+  }
+}
+
+/* Модальные окна */
+
+#closeModal {
+  text-decoration: none;
+}
+#closeModal1 {
+  text-decoration: none;
+}  
+
+#openModal {
+  text-decoration: none;
+  color:inherit;
+}
+
+#modal_sign_up {
+  position: fixed;
+  border: 0;
+  border-radius: 4px;
+  padding: 1em 2em;
+}
+
+#modal_log_in {
+  position: fixed;
+  border: 0;
+  border-radius: 4px;
+  padding: 1em 2em;
+}
+
+#modal_sign_up::backdrop {
+  background-color: #313131;
+  opacity: 0.3;
+}
+
+#modal_log_in::backdrop {
+  background-color: #313131;
+  opacity: 0.3;
+}
+
+
+
+/* Модальное окно регистрации */
+.login {
+  margin: 20px auto;
+  width: 300px;
+}
+
+.login-screen {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.app-title {
+  text-align: center;
+  color: #777;
+}
+
+.login-form {
+  text-align: center;
+}
+
+.control-group {
+  margin-bottom: 10px;
+}
+
+input {
+  text-align: center;
+  background-color: #ecf0f1;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 200;
+  padding: 10px 0;
+  width: 250px;
+  transition: border 0.5s;
+}
+
+input:focus {
+  border: 2px solid #3498db;
+  box-shadow: none;
+}
+
+.btn {
+  border: 2px solid transparent;
+  background: #3498db;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 10px 0;
+  text-decoration: none;
+  text-shadow: none;
+  border-radius: 3px;
+  box-shadow: none;
+  transition: 0.25s;
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+.login-link {
+  font-size: 12px;
+  color: #444;
+  display: block;
+  margin-top: 12px;
+}
